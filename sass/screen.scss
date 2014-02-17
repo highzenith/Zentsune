@@ -1,0 +1,66 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "../fonts/museosans_500_macroman/stylesheet.css";
+
+@mixin mainFont($size, $color) {
+    font-size: $size;
+    font-family: "museo_sans500", sans-serif;
+    color: $color;
+    text-shadow: 0 -1px transparentize(invert($color), 0.8);
+}
+
+$foxyOrange: #f80;
+$smokyGray: #333;
+
+header {
+    background: $foxyOrange;
+
+    .content {
+        width: 960px;
+        margin: 0 auto;
+        padding: 48px;
+    }
+}
+
+h1 {
+    @include mainFont(4em, white);
+    padding-bottom: 48px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    @include mainFont(2em, white);
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+// h3 {
+//     @include mainFont(1.5em, $smokyGray);
+//     text-align: center;
+//     padding-bottom: 24px;
+// }
+
+p {
+    @include mainFont(1em, black);
+    text-align: center;
+}
+
+em {
+    color: $smokyGray;
+    text-shadow: 0 -1px transparentize(invert($smokyGray), 0.4);
+}
+
+section {
+    background: white;
+    
+    .content {
+        width: 960px;
+        margin: 0 auto;
+        padding: 48px;
+    }
+}
