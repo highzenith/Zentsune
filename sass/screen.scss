@@ -3,6 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "compass";
 @import "compass/reset";
 @import "../fonts/museosans_500_macroman/stylesheet.css";
 
@@ -10,25 +11,27 @@
     font-size: $size;
     font-family: "museo_sans500", sans-serif;
     color: $color;
-    text-shadow: 0 -1px transparentize(invert($color), 0.8);
+    text-shadow: 0 -1px transparentize(invert($color), 0.7);
 }
 
+$foxyRed: #f50;
 $foxyOrange: #f80;
 $smokyGray: #333;
 
 header {
-    background: $foxyOrange;
-
+    @include background-image(linear-gradient(left bottom, $foxyRed, $foxyOrange));
+    @include box-shadow(darken($foxyRed, 15%) 0 1px 0 0);
+    position: relative;
     .content {
         width: 960px;
         margin: 0 auto;
-        padding: 48px;
+        padding: 60px 48px 32px 48px;
     }
 }
 
 h1 {
     @include mainFont(4em, white);
-    padding-bottom: 48px;
+    padding-bottom: 60px;
     text-align: center;
     font-weight: bold;
 }

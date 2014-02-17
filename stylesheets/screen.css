@@ -68,58 +68,65 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 header {
-  background: #ff8800;
+  background-image: -moz-linear-gradient(left bottom, #ff5500, #ff8800);
+  background-image: -o-linear-gradient(left bottom, #ff5500, #ff8800);
+  background-image: -webkit-linear-gradient(left bottom, #ff5500, #ff8800);
+  background-image: linear-gradient(to right top, #ff5500, #ff8800);
+  -moz-box-shadow: #b33b00 0 1px 0 0;
+  -webkit-box-shadow: #b33b00 0 1px 0 0;
+  box-shadow: #b33b00 0 1px 0 0;
+  position: relative;
 }
-/* line 22, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 header .content {
   width: 960px;
   margin: 0 auto;
-  padding: 48px;
+  padding: 60px 48px 32px 48px;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 h1 {
   font-size: 4em;
   font-family: "museo_sans500", sans-serif;
   color: white;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
-  padding-bottom: 48px;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+  padding-bottom: 60px;
   text-align: center;
   font-weight: bold;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 h2 {
   font-size: 2em;
   font-family: "museo_sans500", sans-serif;
   color: white;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
   text-align: center;
   padding-bottom: 24px;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 p {
   font-size: 1em;
   font-family: "museo_sans500", sans-serif;
   color: black;
-  text-shadow: 0 -1px rgba(255, 255, 255, 0.2);
+  text-shadow: 0 -1px rgba(255, 255, 255, 0.3);
   text-align: center;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 em {
   color: #333333;
   text-shadow: 0 -1px rgba(204, 204, 204, 0.6);
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 section {
   background: white;
 }
-/* line 61, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 section .content {
   width: 960px;
   margin: 0 auto;
