@@ -15,11 +15,13 @@
 }
 
 $foxyRed: #f50;
-$foxyOrange: #f80;
+$foxyOrange: #f90;
+$sunnyTan: #ffb;
 $smokyGray: #333;
 
 header {
-    @include background-image(linear-gradient(left bottom, $foxyRed, $foxyOrange));
+    background: $foxyRed;
+    // @include background-image(linear-gradient(left bottom, $foxyRed, $foxyOrange));
     @include box-shadow(darken($foxyRed, 15%) 0 1px 0 0);
     position: relative;
     .content {
@@ -42,24 +44,19 @@ h2 {
     padding-bottom: 24px;
 }
 
-// h3 {
-//     @include mainFont(1.5em, $smokyGray);
-//     text-align: center;
-//     padding-bottom: 24px;
-// }
-
 p {
-    @include mainFont(1em, black);
+    @include mainFont(1em, $foxyRed);
     text-align: center;
 }
 
 em {
     color: $smokyGray;
+    font-weight: bold;
     text-shadow: 0 -1px transparentize(invert($smokyGray), 0.4);
 }
 
 section {
-    background: white;
+    background: $sunnyTan;
     
     .content {
         width: 960px;

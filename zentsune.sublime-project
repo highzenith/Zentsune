@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"fonts",
+				".sass-cache"
+			],
+			"follow_symlinks": true,
+			"path": "C:\\Users\\Nick\\Dropbox\\Personal\\Projects\\Zentsune"
+		}
+	]
+}
